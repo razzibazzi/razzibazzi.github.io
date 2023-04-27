@@ -1,0 +1,423 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package enrollment;
+
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+/**
+ *
+ * @author Bea Ysabel lacheca
+ */
+public class Enrollment {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String Stem_grade_11_1st_sem [] = {"" , "General Mathematics" ,"Earth and Science" ,"Pre Calculus " ,  "General Chemistry" ,"Statistics and Probability", "Introduction to Philosophy of the Human Person " , "21st Century Literature from the Philippines and the world", "Komunikasyon at  Pananaliksik sa Wika at Kulturang Pilipino "};
+        String Stem_grade_11_2nd_sem [] = {"" , "Pre-Calculus 2" ,"Basic Calculus" , "General Chemistry 2", "Disaster Readiness and Risk Reduction" , "Physical Education and Health" ,"Personal Development", "III"};
+        String Stem_grade_11_time [] = {"MONDAY    - FRIDAY " , "7:30  AM - 8:30  AM" , "8:30  AM - 9:30  AM" , "9:30  AM - 11:00 AM" , "11:00 AM - 12:00 PM" ,"1:00  PM - 2:00  PM" , "2:00  PM - 3:30  PM" , "3:30  PM - 4:30  PM" , "4:30  PM - 5:30  PM"};
+
+        String Humss_grade_11_1st_sem [] = {"" , "Creative Writing", "Introduction to World Religions and Belief Systems" , "Community Engagement, Solidarity, and Citizenship" , "Tends, Networks, and  Critical Thinking in the 21st Century Culture" , "General Mathematics" , "Physical Education and Health"};
+        String Humss_grade_11_2nd_sem [] = {"" , "Creative Nonfiction/Malikhaing Sanaysay", "Introduction to World Anthropology" , "Philippine History and Culture", "Disciplines and Ideas in the Social Sciences" , "Physical Education and Health 2" , "Personal Development" , "Applied Economics"};
+        String Humss_grade_11_time [] = {"MONDAY    - FRIDAY " , "7:30  AM - 8:30  AM" , "8:30  AM - 9:30  AM" , "9:30  AM - 11:00 AM" , "11:00 AM - 12:00 PM" ,"1:00  PM - 2:00  PM" , "2:00  PM - 3:30  PM" , "3:30  PM - 4:30  PM" , "4:30  PM - 5:30  PM"};
+
+        String ABM_grade_11_1st_sem [] = {"" , "Applied Economics" , "Business Ethics and Social Responsibility" , "Fundamentals of Accountancy , Business, and Management 1" , "Business Math" , "Principles of Marketing" , "Principles of Business Law and Taxation" , "Physical Education and Health"};
+        String ABM_grade_11_2nd_sem [] = {"", "Fundamentals of Accountancy, Business, and Management 2" , "Business Finance" , "Organization and Management" , "Business Enterprise Simulation" , "Principles of Business Law and Taxation" , "Physical Education and Health 2"};
+        String ABM_grade_11_time [] = {"MONDAY    - FRIDAY " , "7:30  AM - 8:30  AM" , "8:30  AM - 9:30  AM" , "9:30  AM - 11:00 AM" , "11:00 AM - 12:00 PM" ,"1:00  PM - 2:00  PM" , "2:00  PM - 3:30  PM" , "3:30  PM - 4:30  PM" , "4:30  PM - 5:30  PM"};
+
+        String Stem_grade_12_1st_sem [] = {"", "General Biology 1", "General Physics 1" , "General Chemistry 2" , "Earth and Life Science" , "English for Academic and Professional Purposes", "Filipino sa Piling Larang Akademik" , "Physical Education and Health 1"};
+        String Stem_grade_12_2nd_sem [] = {"" , "Statistics and Probability" , "General Biology 2" , "Research in Daily in Life 2" , "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino" , "Physical Education and Health 2"};
+        String Stem_grade_12_time [] = {"MONDAY    - FRIDAY " , "7:30  AM - 8:30  AM" , "8:30  AM - 9:30  AM" , "9:30  AM - 11:00 AM" , "11:00 AM - 12:00 PM" ,"1:00  PM - 2:00  PM" , "2:00  PM - 3:30  PM" , "3:30  PM - 4:30  PM" , "4:30  PM - 5:30  PM"};
+
+        String Humss_grade_12_1st_sem [] = {"", "Reading and Writing Skills for Academic Purposes" , "Philippine Politics and Governance" , "Creative Writing/Malikhaing Pagsulat" , "Introduction to World Religions and Belief System" , "Physical Education and Health" , "Creative Writing/ Malikhaing Pagsulat"};
+        String Humss_grade_12_2nd_sem [] = {"" , "21st Century Literature from the Philippines and the World" , "Contemporary Philippines Arts from the Regions" , "Disciplines and Ideas in the Social Sciences" , "Research" , "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino" , "Physical Education and Health 2"};
+        String Humss_grade_12_time [] = {"MONDAY    - FRIDAY " , "7:30  AM - 8:30  AM" , "8:30  AM - 9:30  AM" , "9:30  AM - 11:00 AM" , "11:00 AM - 12:00 PM" ,"1:00  PM - 2:00  PM" , "2:00  PM - 3:30  PM" , "3:30  PM - 4:30  PM" , "4:30  PM - 5:30  PM"};
+
+        String ABM_grade_12_1st_sem [] = {"" , "Applied Economics 2" , "Fundamentals of Accountancy, Business, and Management 2" , "Business Ethic and Social Responsibility 2" , "English for Academic and Professional Purposes" , "Filipino sa Piling Larang" , "Physical Education and Health 1"};
+        String ABM_grade_12_2nd_sem [] = {"", "Business Ethics and Social Responsibility 2" , "Business Finance and Investment" ,"Principles of Marketing" , "Applied Economics 2" , "Entrepreneurship" , "Work Immersion"};
+        String ABM_grade_12_time [] = {"MONDAY    - FRIDAY " , "7:30  AM - 8:30  AM" , "8:30  AM - 9:30  AM" , "9:30  AM - 11:00 AM" , "11:00 AM - 12:00 PM" ,"1:00  PM - 2:00  PM" , "2:00  PM - 3:30  PM" , "3:30  PM - 4:30  PM" , "4:30  PM - 5:30  PM"};
+        ArrayList<String> name = new ArrayList<>();
+        System.out.println("Enrollment System");
+        String username = "admin";
+        String password = "admin123";
+        
+        
+        Scanner input = new Scanner(System.in);
+        
+        while(true) {
+            
+            System.out.print("Enter Username: " );
+            String user = input.next();
+            System.out.print("Enter Password: ");
+            String pass = input.next();
+            
+            if(username.equalsIgnoreCase(user) && password.equalsIgnoreCase(pass)) {
+                break;
+                } else {
+                System.out.println("Invalid input Please Try Again");
+            }
+        }
+                while(true){
+                    
+                    System.out.println("--------------------------------------------------");
+                    System.out.println("Welcome!\n[1] Enroll\n[2] Exit");
+                    System.out.print("Please select your option: ");
+                    String option = input.next();
+                    
+                    if(option.equals("1")){
+                        System.out.println("--------------------------------------------------");
+                        System.out.print("Full Name: ");
+                        String names = input.next();
+                        name.add(names);
+                        input.nextLine();
+                        
+                        while(true) {
+                            
+                            System.out.print("Address: ");
+                            String address = input.nextLine();
+                            
+                            if(address != "") {
+                                break;
+                            } else {
+                                System.out.println("Please enter a data");
+                            }
+                        }
+                        while (true) {
+                            System.out.print("Status: ");
+                            String stat = input.nextLine();
+                            
+                            if(stat != "") {
+                                break;
+                            } else {
+                                System.out.println("Please enter a data");
+                            }
+                        }
+                        while(true) {
+                            System.out.print("LRN: ");
+                            String lrn = input.nextLine();
+                            
+                            if(lrn != "") {
+                                break;
+                            } else {
+                                System.out.println("Please enter a data");
+                            }
+                        }
+                        while(true) {
+                            System.out.print("Last School Attended: ");
+                            String school = input.nextLine();
+                            
+                            if(school != "") {
+                                break;
+                            } else {
+                                System.out.println("Please enter a data: ");
+                            }
+                        }
+                        while (true) {
+                            
+                            System.out.println("--------------------------------------------------");
+                            System.out.print("[1]GRADE 11\n[2]GRADE12\nPlease select your option: ");
+                            String level = input.next();
+                            
+                            if(level.equals("1")) {
+                                
+                                while(true) {
+                                    
+                                    System.out.println("--------------------------------------------------");
+                                    System.out.print("[1] STEM\n[2]HUMSS\n[3]ABM\nPlease select your option: ");
+                                    String strand = input.next();
+                                    
+                                    if(strand.equals("1")) {
+                                        
+                                        while(true) {
+                                            
+                                            System.out.println("--------------------------------------------------");
+                                            System.out.println("[1] First Semester \n[2] Second Semester");
+                                            input.nextLine();
+                                            System.out.print("Please Select your option: ");
+                                            String semester = input.next();
+                                            System.out.println("----------------------------------------------");
+                                           
+                                            if(semester.equals("1")) {
+                                                
+                                                System.out.print("Are you sure you want to enroll?\n[1]YES \n[2]NO\nPlease choose: ");
+                                                String vote = input.next();
+                                               
+                                                if(vote.equals("1")) {
+                                                    System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED" );
+                                                     System.out.println("Name: "+name +"                     Grade 11   Strand Stem");
+                                                    for (int i = 0 ; i <  Stem_grade_11_1st_sem.length ; i++){
+                                                        System.out.format( "%1s %-65s | %2s |%n", "*" ,Stem_grade_11_1st_sem [i] ,Stem_grade_11_time [i]);
+                                                    }
+                                                } else {
+                                                   System.out.print("Your Enrollment is Cancelled");
+                                                }
+                                                System.exit(0);
+                                            } else if(semester.equals("2")) {
+                                                
+                                                System.out.print("Are you sure you want to enroll?\n[1]YES \n[2]NO");
+                                                String vote = input.next();
+                                                
+                                                if(vote.equals("1")){
+                                                    System.out.println("--------------------------------------------------");
+                                                    System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                     System.out.println("Name: "+name +"                     Grade 11   Strand Stem");
+                                                    for (int i = 0 ; i <  Stem_grade_11_2nd_sem.length ; i++){
+                                                        System.out.format( "%1s %-65s | %2s |%n", "*" ,Stem_grade_11_2nd_sem [i] ,Stem_grade_11_time [i]);
+                                                    }
+                                                } else{
+                                                    System.out.print("Your Enrollment is Cancelled");
+                                                }
+                                                System.exit(0);
+                                            }
+                                                
+                                        }
+                                            }else if(strand.equals("2")){
+                                                while(true) {
+                                            
+                                            System.out.println("--------------------------------------------------");
+                                            System.out.println("[1] First Semester \n[2] Second Semester");
+                                            input.nextLine();
+                                            System.out.print("Please Select your option: ");
+                                            String semester = input.next();
+                                            System.out.println("----------------------------------------------");
+                                           
+                                            if(semester.equals("1")) {
+                                                
+                                                System.out.print("Are you sure you want to enroll?\n[1]YES \n[2]NO\nPlease choose: ");
+                                                String vote = input.next();
+                                               
+                                                if(vote.equals("1")) {
+                                                    System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED" );
+                                                     System.out.println("Name: "+name +"                     Grade 11   Strand HUMSS");
+                                                    for (int i = 0 ; i <  Humss_grade_11_1st_sem.length ; i++){
+                                                        System.out.format( "%1s %-65s | %2s |%n", "*" ,Humss_grade_11_1st_sem [i] ,Stem_grade_11_time [i]);
+                                                    }
+                                                } else {
+                                                   System.out.print("Your Enrollment is Cancelled");
+                                                }
+                                                System.exit(0);
+                                            } else if(semester.equals("2")) {
+                                                
+                                                System.out.print("Are you sure you want to enroll?\n[1]YES \n[2]NO");
+                                                String vote = input.next();
+                                                
+                                                if(vote.equals("1")){
+                                                    System.out.println("--------------------------------------------------");
+                                                    System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                     System.out.println("Name: "+name +"                     Grade 11   Strand HUMSS");
+                                                    for (int i = 0 ; i <  Humss_grade_11_2nd_sem.length ; i++){
+                                                        System.out.format( "%1s %-65s | %2s |%n", "*" ,Humss_grade_11_2nd_sem [i] ,Humss_grade_11_time [i]);
+                                                    }
+                                                } else{
+                                                    System.out.print("Your Enrollment is Cancelled");
+                                                }
+                                                System.exit(0);
+                                            }
+                                                
+                                        }
+                                        
+                                            
+                                            }else if(strand.equals("3")) {// grade 11 ABM
+                                                
+                                                while(true) {
+                                                    
+                                                    System.out.println("--------------------------------------------");
+                                                    System.out.println("[1] First Semester \n[2] Second Semester");
+                                                    System.out.print("Please Select your option: ");
+                                                    String semester_option = input.nextLine();
+                                                    System.out.println("--------------------------------------------");
+                                                    
+                                                    if(semester_option.equals("1")) {
+                                                        System.out.println("Are you sure you want to enroll?\n[1]YES \n[2]NO\nPlease choose: ");
+                                                        String vote2 = input.next();
+                                                        
+                                                        if(vote2.equals("1")){
+                                                            System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                            System.out.println("Name: "+name +"                     Grade 11   Strand ABM");
+                                                            for (int i = 0 ; i <  ABM_grade_11_1st_sem.length ; i++){
+                                                                System.out.format( "%1s %-65s | %2s |%n", "*" ,ABM_grade_11_1st_sem [i] ,ABM_grade_11_time [i]);
+                                                            }
+                                                        }
+                                                    }else if(semester_option.equals("2")) {
+                                                            System.out.print("Are you sure you want to enroll?\n[1]YES\n[2]NO\nPlease choose: ");
+                                                            String final_vote = input.nextLine();
+                                                            
+                                                            if(final_vote.equals("1")) {
+                                                                System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                                System.out.println("Name: "+name +"                     Grade 11   Strand ABM");
+                                                                for (int i = 0 ; i <  ABM_grade_11_2nd_sem.length ; i++){
+                                                                    System.out.format( "%1s %-65s | %2s |%n", "*" ,ABM_grade_11_2nd_sem [i] ,ABM_grade_11_time [i]);
+                                                                }
+                                                            } else {
+                                                                   System.out.print("Your Enrollment is Cancelled");
+                                                            }
+                                                            System.exit(0);
+                                                    }else {
+                                                        System.out.println("Invalid Input");
+                                                    }
+                                                }
+                                            }else{
+                                                
+                                            }
+                                }
+                            } else if(level.equals("2")) {
+                                
+                                while(true) {
+                                    
+                                    System.out.println("------------------------------------------------------");
+                                    System.out.print("[1] STEM\n[2]HUMSS\n[3]ABM\nPlease select your option: ");
+                                    String strand12= input.next();
+                                    
+                                    if(strand12.equals("1")) {
+                                        
+                                        System.out.println("--------------------------------------------");
+                                        System.out.println("[1] First Semester \n[2] Second Semester");
+                                        input.nextLine();
+                                        System.out.print("Please Select your option: ");
+                                        String semester_12 = input.next();
+                                        System.out.println("----------------------------------------------");
+                                        
+                                        if(semester_12.equals("1")) {
+                                            
+                                            System.out.print("Are you sure you want to enroll?\n[1]YES \n[2]NO\nPlease choose: ");
+                                            String vote2 = input.next();
+                                            
+                                            if(vote2.equals("1")){
+                                                System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                 System.out.println("Name: "+name +"                     Grade 12   Strand Stem");
+                                                for (int i = 0 ; i <  Stem_grade_12_1st_sem.length ; i++) {
+                                                  System.out.format( "%1s %-65s | %2s |%n", "*" ,Stem_grade_12_1st_sem [i] ,Stem_grade_11_time [i]);
+                                                }
+                                            } else{
+                                               System.out.print("Your Enrollment is Cancelled");
+                                            }
+                                            System.exit(0);
+                                        } else if(semester_12.equals("2")) {
+                                            
+                                            System.out.print("Are you sure you want to enroll?\n[1]YES \n[2]NO\nPlease choose: ");
+                                            String vote2 = input.next();
+                                            
+                                            if(vote2.equals("1")) {
+                                                System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                 System.out.println("Name: "+name +"                     Grade 11   Strand Stem");
+                                                for (int i = 0 ; i <  Stem_grade_12_2nd_sem.length ; i++){
+                                                    System.out.format( "|%1s %-65s | %2s |%n", "*" ,Stem_grade_12_2nd_sem [i] ,Stem_grade_11_time [i]);
+                                                }
+                                            }   else{
+                                                System.out.print("Your Enrollment is Cancelled");
+                                            }
+                                            System.exit(0);
+                                        } else{
+                                            System.out.println("Wrong input");
+                                        }
+                                    } else if(strand12.equals("2")) {
+                                        
+                                        while(true) {
+                                            
+                                            System.out.println("--------------------------------------------");
+                                            System.out.println("[1] First Semester \n[2] Second Semester");
+                                            input.nextLine();
+                                            System.out.print("Please Select your option: ");
+                                            String semester12 = input.next();
+                                            System.out.println("--------------------------------------------");
+                                            String vote2 = input.next();
+                                            
+                                            if(semester12.equals("1")) {
+                                                
+                                                System.out.println("Are you sure you want to enroll?\n[1]YES \n[2]NO\nPlease choose: ");
+                                                String vote1 = input.next();
+
+                                                if(vote1.equals("1")){
+                                                    System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                    System.out.println("Name: "+name +"                     Grade 12   Strand Humss");
+                                                    for (int i = 0 ; i <  Humss_grade_12_1st_sem.length ; i++){
+                                                        System.out.format( "%1s %-65s | %2s |%n", "*" ,Humss_grade_12_1st_sem [i] ,Humss_grade_11_time [i]);
+                                                    }
+                                                } else{
+                                                    System.out.print("Your Enrollment is Cancelled");
+                                                }
+                                                System.exit(0);
+                                            } else if(semester12.equals("2")) {
+                                                
+                                                System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                System.out.println("Name: "+name +"                     Grade 12   Strand Humss");
+                                                for (int i = 0 ; i <  Humss_grade_12_2nd_sem.length ; i++){
+                                                  System.out.format( "%1s %-65s | %2s |%n", "*" ,Humss_grade_12_2nd_sem [i] ,Humss_grade_11_time [i]);
+                                                }
+                                                
+                                            } else{
+                                                System.out.print("Your Enrollment is Cancelled");
+                                            }
+                                            System.exit(0);
+                                        }
+                                    } else if(strand12.equals("3")) {
+                                        
+                                        while(true) {
+                                            
+                                            System.out.println("--------------------------------------------");
+                                            System.out.println("[1] First Semester \n[2] Second Semester");
+                                            input.nextLine();
+                                            System.out.print("Please Select your option: ");
+                                            String semester_12 = input.next();
+                                            System.out.println("--------------------------------------------");
+                                            String vote2 = input.next();
+                                            
+                                            if(semester_12.equals("1")) {
+                                                
+                                                System.out.println("Are you sure you want to enroll?\n[1]YES \n[2]NO");
+                                                String vote1 = input.next();
+
+                                                if(vote1.equals("1")){
+                                                    System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                    System.out.println("Name: "+name +"                     Grade 12   Strand ABM");
+                                                    for (int i = 0 ; i <  ABM_grade_12_1st_sem.length ; i++) {
+                                                        System.out.format( "%1s %-65s | %2s |%n", "*" ,ABM_grade_12_1st_sem [i] ,ABM_grade_11_time [i]);
+                                                    }
+                                                } else{
+                                                   System.out.print("Your Enrollment is Cancelled");
+                                                }
+                                                System.exit(0);  
+                                            } else if (semester_12.equals("2")){
+                                                
+                                                System.out.print("Are you sure you want to enroll?\n[1]YES\n[2]NO\nPlease choose: ");
+                                                String vote1 = input.next();
+
+                                                if(vote1.equals("1")){
+                                                    System.out.println("CONGRATS YOURE OFFICIALLY ENROLLED");
+                                                    System.out.println("Name: "+ name +"                     Grade 12   Strand ABM");
+                                                    for (int i = 0 ; i <  ABM_grade_12_2nd_sem.length ; i++) {
+                                                        System.out.format( "%1s %-65s | %2s |%n", "*" ,ABM_grade_12_2nd_sem [i] ,ABM_grade_11_time [i]);
+                                                    }
+                                                    
+                                                } else{
+                                                  System.out.print("Your Enrollment is Cancelled");
+                                                  break;
+                                                }
+                                                System.exit(0);
+                                            } else {
+                                                System.out.print("Wrong Input");
+                                            }
+                                        }
+                                    }else{//Strand
+                                        
+                                    }
+                                }
+                            }else{//level
+                                
+                            }
+                        }
+                    } else if(option.equals("2")) {
+                        System.out.print("Thank you");
+                        System.exit(0);
+                    } else{
+                        System.out.println("Invalid Input");
+                    }
+                }
+        
+    
+    }
+}
