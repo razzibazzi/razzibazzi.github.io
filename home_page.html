@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yasha Milktea Shop</title>
+<style>
+
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	background-position: center;
+	background-image: url('1_20230411_093918_0000.png');
+	background-size: cover;
+	position: relative;
+}
+.logo {
+	display: inline-block;
+	width: 40%;
+	text-align: left;
+	vertical-align: middle;
+}
+.logo a {
+	text-decoration: none;
+}
+.logo span {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 40px;	
+}
+
+.menu {
+	display: inline-block;
+	width: 60%;
+	text-align: right;
+	vertical-align: middle;
+}
+.menu ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+.menu ul li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+.menu ul li:hover {
+	background-color: #2F4F4F;
+	transition: all .5s ease; 	
+}
+.menu ul li a {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 15px 5%;
+	background-color: #0097b2;
+	box-sizing: border-box;
+	font-size: 0;
+	z-index: 10;
+}
+.display_homepage {
+	padding: 15px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.display_homepage img {
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+footer {
+	background-color: #9f7a5c;
+	padding: 15px 5%;
+	color: #fff;
+}
+footer a {
+	display: inline-block;
+	width: 60%;
+	margin: 0 0 0 auto;
+	text-align: right;
+	vertical-align: middle;
+	list-style: none;
+	padding: 0;
+}
+body {
+	background-color: #FFEDD4;
+    margin:0px !important;
+}
+.blank {
+	position: static;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 5%;
+	background-color: #41060e;
+	box-sizing: border-box;
+	font-size: 10px;
+	z-index: 10;
+}
+.blank p {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+}
+
+</style>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<a href="home_page.html">
+				<span>Yasha Milktea</span>
+			</a>
+		</div>
+		<div class = "menu">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="about1.html">ABOUT</a></li>
+				<li><a href="product1.html">PRODUCTS</a></li>
+				<li><a href="contact1.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="banner">
+	</div>	
+	<div class = "blank">
+	</div>
+	<div class = "display_homepage">
+		<img src = "imeshem3.jpg" width = "300px">
+		<img src = "imeshem1.jpg" width = "300px">
+		<img src = "imeshem2.jpg" width = "300px">
+	</div>
+	<footer style="display: flex;align-items: center;justify-content: center;">
+		<span>© 2023 Yasha Milktea</span>
+		<a href="https://web.facebook.com/YashaMilkTea"><img src = "fb_logo.png" width="50px"></a>        
+	</footer> 
+</body>
+</html>
