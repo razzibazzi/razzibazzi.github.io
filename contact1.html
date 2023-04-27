@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>Yasha Milktea Shop</title>
-<style>    
+<style>
+
+
 .content {
 	width: 70%;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-
 .content h2 {
 	font-size: 30px;
 }
@@ -26,47 +27,6 @@
 	color: #fff;
 	font-size: 40px;	
 }
-.logo img {
-	margin: 0 auto;
-	max-width: 200px;
-}
-.banner {
-	width: 100%;
-	height: 100vh;
-	background-color: #000;
-	background-position: center;
-	background-size: cover;
-	position: relative;
-}
-.banner:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #000;
-	opacity: 0.5;
-	width: 100%;
-	height: 100%;
-}
-.banner h1 {
-	position: absolute;
-	width: 90%;
-	bottom: 5%;
-	left: 5%;
-	color: #fff;
-	font-size: 40px;
-	text-align: left;
-}
-.content {
-	width: 70%;
-	margin: 0 auto;
-	padding: 100px 0;
-}
-
-.content h2 {
-	font-size: 30px;
-}
-
 .menu {
 	display: inline-block;
 	width: 60%;
@@ -105,90 +65,6 @@ nav {
 	font-size: 0;
 	z-index: 10;
 }
-.map_form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-form {
-	font-size: 0;
-	background-color: #F0E68C;
-	border: 3px solid #000;
-	border-radius: 20px;
-	width: 80%;
-}
-.field {
-	width: 50%;
-	display: inline-block;
-	padding: 0 20px;
-	box-sizing: border-box;
-	margin-bottom: 30px;
-}
-.field label {
-	display: block;
-	margin-top: 20px;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 15px;
-}
-.field input {
-	width: 87%;
-	padding: 15px 10px;
-	border: 1px solid #000	
-}
-.field1 {
-	width: 210%;
-	display: inline-block;
-	padding: 0 20px;
-	box-sizing: border-box;
-	margin-bottom: 30px;
-}
-.field1 label {
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 15px;
-}
-.field1 input {
-	width: 450px;
-	padding: 15px 10px;
-	border: 1px solid #000;
-    height: 160px;
-    box-sizing: border-box;
-}
-form button {
-	margin-right: 200%;
-	font-size: 25px;
-	color: #000;
-	text-decoration: none;
-	padding: 15px 30px;
-	background-color: #d3efdc;
-	border: 1px solid #000;
-	border-radius: 5px;
-	margin: 0px 100px 30px 180px;	
-}
-.btn_cnt button{
-	text-align: center;
-}
-form button:hover{
-	color: #fff;
-	background-color: #000;
-	transition: all .5s ease; 
-}
-.content {
-	width: 70%;
-	margin: 0 auto;
-	padding: 10px 0;
-}
-.content h1 {
-	font-size: 40px;
-}
-.content p{
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 20px;
-	text-align: justify;
-	line-height: 1.5;
-}
 footer {
 	background-color: #9f7a5c;
 	padding: 15px 5%;
@@ -202,25 +78,24 @@ footer a {
 	vertical-align: middle;
 	list-style: none;
 	padding: 0;
+}	
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	background-position: center;
+	background-image: url('1_20230411_093918_0000.png');
+	background-size: cover;
+	position: relative;
 }
-.map_loc {
-	width: 50%;
-	margin: 20px 68px;
-	display: inline-block;
-	text-align: left;
-	box-sizing: border-box;
-}
-body {
-    margin:0px !important;
-	background-color: #FFEDD4;
-}
+
 .blank {
 	position: static;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	padding: 20px 5%;
-	margin-top: 5%;
+	/*margin-top: 5%;*/
 	background-color: #41060e;
 	box-sizing: border-box;
 	font-size: 10px;
@@ -231,6 +106,21 @@ body {
 	font-size: 40px;
 	color: #fff;
 	text-align: center;
+}
+.title{
+    margin: 15px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+    font-size: 20px;
+}
+.title img {
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+body {
+    margin:0px !important;
+	background-color: #FFEDD4;
 }
 </style>
 </head>
@@ -245,42 +135,25 @@ body {
 			<ul>
 				<li><a href="home_page.html">HOME</a></li>
 				<li><a href="about1.html">ABOUT</a></li>
-				<li><a href="product1.html">PRODUCTS</a></li>
-				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">PRODUCTS</a></li>
+				<li><a href="contact1.html">CONTACT</a></li>
 			</ul>
 		</div>
 	</nav>
+    <div class="banner">
+	</div>
 	<div class="blank">
-		<p>Contact Us</p>
+		<p>Product</p>
+	</div>
+    <div class = "title">
+		<img src="menu_products1.png">
+	</div>
+	<div class="title">
+		<img src="menu_products2.png" width="59%" height="20%">	
 	</div>	
-    <div class="content">
-	<p>Your favorite milktea remain available online or via curbside pickup by appointment only. Please contact our hospitality specialists to order your milktea and schedule a pickup appointment. To order and schedule pickup at the Yasha Milktea, call : <a href="">0926 816 8734</a></p>
-	<div class="map_form">
-		<div class="map_loc">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.63657296775742!2d124.63672609808715!3d8.481368939456692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1681959508022!5m2!1sen!2sph" width="300" height="400" style="border: 2px solid #000;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>	
-		<form>
-			<div class="field">
-				<label for="fname">Name:</label>
-				<input type="text" id="fname" placeholder="Your name...">
-			</div>
-			<div class="field">
-				<label for="contact">Contact Number:</label>
-				<input type="text" id="contact" placeholder="Your contact number...">
-			</div>
-			<div class="field1">
-				<label for="feedback">Feedback:</label>
-				<input type="text" id="feaedback" placeholder="Your feedback..."> 
-            </div>
-            <div class="btn_cnt">
-				<button type="submit"> Submit </button>
-			</div>
-		</form>   
-	</div>
-	</div>
 </body>
 <footer style="display: flex;align-items: center;justify-content: center;">
-    <span>© 2023 Yasha Milktea</span>
+	<span>© 2023 Yasha Milktea</span>
 	<a href="https://web.facebook.com/YashaMilkTea"><img src = "fb_logo.png" width="50px"></a>        
-</footer> 
+</footer>
 </html>
